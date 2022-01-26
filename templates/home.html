@@ -1,0 +1,14 @@
+{%extends 'base.html'%}
+
+{%block content%}
+<h1>hello world</h1>
+{%for dev in developers%}
+
+<p>{{dev}}</p>
+<p>{{dev.profile.bio}}</p>
+<p>{{dev.projects.all}}</p>
+<hr>
+
+{%endfor%}
+
+{%endblock content%}
